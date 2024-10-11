@@ -5,27 +5,39 @@ React.js: The frontend JavaScript library is used to build interactive UIs.
 Node.js: Runtime environment that executes JavaScript code server-side.
 Step-by-Step Implementation
 1. Set Up EC2 Instance
+   
+   ![image](https://github.com/user-attachments/assets/1d9edc50-2c71-464c-b75f-b31718f42298)
+
 Log in and update your Ubuntu instance.
 Run the following commands:
 sudo apt update
 sudo apt upgrade
 Install Node.js:
+![image](https://github.com/user-attachments/assets/94bae385-7507-4ab1-9440-4425c266b456)
+
 Command
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt-get install -y nodejs
 Verify the installation:
 Command
 node -v
-2. Application Code Setup
+![image](https://github.com/user-attachments/assets/441e08c8-a058-47c7-8da7-a49fa67cc0de)
+
+
+3. Application Code Setup
 Initialize the Project: Create a new directory and initialize the project.
 command
 mkdir Todo
 cd Todo
+![image](https://github.com/user-attachments/assets/554d580e-30c2-4978-b3e3-f4da5b2ef60f)
+
 npm init
 Install Express: Install Express.js to simplify routing and middleware management.
  code
 npm install express
-3. Building Routes
+![image](https://github.com/user-attachments/assets/cec360e2-69ee-4946-b4a2-ec2c9b09368f)
+
+5. Building Routes
 Create the Routes Folder:
 code
 mkdir routes
@@ -49,6 +61,9 @@ router.delete('/todos/:id', (req, res, next) => {
 });
 
 module.exports = router;
+
+![image](https://github.com/user-attachments/assets/30da8a88-e598-4a80-bf59-e1f930a2f110)
+
 4. Database Models with MongoDB and Mongoose
 Install Mongoose:
 bash
@@ -60,7 +75,6 @@ mkdir models
 cd models
 touch todo.js
 Define Todo Model in todo.js:
-javascript
 Code
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
@@ -97,12 +111,23 @@ app.use(express.json());
 app.use('/api', routes);
 
 app.listen(port, () => console.log(`Server running on port ${port}`));
+Start your server with node.js.
+
+![image](https://github.com/user-attachments/assets/0cd6f7c3-c898-4d9c-ada6-341140ab60d2)
+
+You will see the image below
+![image](https://github.com/user-attachments/assets/ac447828-98cd-4d8b-a27e-3bf2b186f4c7)
+
+
 6. Frontend Creation with React
 Create React App:
 
 bash
 Code
 npx create-react-app client
+
+![image](https://github.com/user-attachments/assets/826de27e-dc4d-42e2-9042-b06797e4e6a2)
+
 Install Dependencies:
 
 Concurrently: Run multiple commands:
@@ -114,6 +139,9 @@ bash
 Copy code
 npm install nodemon --save-dev
 Update package.json to streamline development:
+
+![image](https://github.com/user-attachments/assets/e8a4120c-e961-4fcc-9942-8bfb24b490c6)
+
 
 json
 Copy code
@@ -130,14 +158,13 @@ Copy code
 Run the Application:
 
 bash
-Copy code
+Code
 npm run dev
 7. Creating React Components
 Create Components: Inside src/components, create three files:
 Input.js:
 
-javascript
-Copy code
+Code
 import React, { Component } from 'react';
 import axios from 'axios';
 
@@ -267,5 +294,8 @@ ul {
 
 li {
     padding: 15px;
+
+    ![image](https://github.com/user-attachments/assets/2b46d034-29b6-45dc-88ca-2763e3f91cee)
+
     background: #282c34;
 }
