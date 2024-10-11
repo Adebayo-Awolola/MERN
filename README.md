@@ -298,5 +298,6 @@ li {
     background: #282c34;
 }
 
-![image](https://github.com/user-attachments/assets/f3d2d79a-15df-4ce5-9945-797c805bb36a)
+![image](https://github.com/user-attachments/assets/9ef6b0a6-9f30-4aa0-b664-c3855ba5146e)
+
 
