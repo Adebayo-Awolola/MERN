@@ -295,7 +295,8 @@ ul {
 li {
     padding: 15px;
 
-    ![image](https://github.com/user-attachments/assets/2b46d034-29b6-45dc-88ca-2763e3f91cee)
-
     background: #282c34;
 }
+
+![image](https://github.com/user-attachments/assets/f3d2d79a-15df-4ce5-9945-797c805bb36a)
+
